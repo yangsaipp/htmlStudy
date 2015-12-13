@@ -1,0 +1,534 @@
+/*css代码统一写到该文件当中*/
+* {
+	margin: 0;
+	padding:0;
+}
+a {
+	text-decoration: none;
+	color: #666;
+}
+
+li {
+	list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+body {
+	font:12px/1.5 'Microsoft Yahei', 'Simsun'
+}
+
+.head {
+	width: 1000px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+.head .head-logo {
+	float: left;
+}
+
+.head .head-nav {
+	float: right;
+	background: #48AE15;
+	border-radius:45px;
+}
+
+.head .head-nav ul {
+	padding: 0 50px;
+
+}
+
+.head .head-nav li {
+	display: inline;
+	padding: 20px 20px;
+	/*margin-right: -4px;*/
+}
+
+.head .head-nav li a {
+	font-size: 18px;
+	line-height: 50px;
+	color: #fff;
+}
+
+.head .head-nav li:hover a {
+	color: #000;
+}
+.head .head-nav li:hover{
+	background: #fff;
+}
+
+.head .head-nav .cur {
+	background: #F3FF41;
+}
+
+.head .head-nav .cur a {
+	color: #000;
+}
+
+.content {
+	width: 1000px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+.content .content-left {
+	float: left;
+	width: 670px;
+}
+
+.article-list {
+	margin: 20px auto;
+}
+
+.article-list h2 {
+	margin: 0;
+	border-bottom: 3px solid red;
+	line-height:36px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.article-list h2 span {
+	float: right;
+}
+
+.article-list h2 span a{
+	font-size: 12px;
+	padding:0 5px;
+	text-decoration: none;
+	color: #666;
+}
+
+.ad {
+	overflow: hidden;
+	position:relative;
+}
+
+.ad .show-window {
+	width: 100%;
+	height: 280px;
+}
+
+.ad .ad-imge-list {
+	position: relative;
+}
+
+.ad .ad-imge-list img {
+	position: absolute;
+}
+
+.ad .img-title {
+	background: url(../images/slide-bg.png) 0 0;
+	color:#fff;
+	font-size: 12px;
+	clear:both;
+	position:absolute;
+	top:244px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.ad .img-title span {
+	padding: 0px 20px;
+	line-height: 36px;
+	overflow: hidden;
+}
+
+.ad .img-title .title{
+	
+}
+
+.ad .img-title .content{
+	
+}
+
+.ad .img-title .img-index{
+	float: right;
+}
+
+.ad .img-title .img-index a{
+	color: #fff;
+	background: url(../images/silde-nav.png) no-repeat 0 0;
+	padding:4px 9px;
+}
+
+.ad .img-title .img-index .cur{
+	background: url(../images/silde-nav.png) no-repeat 0 100%;
+}
+
+.article {
+	overflow: hidden;
+	clear: both;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 40px;
+	padding: 30px 0;
+}
+
+.article img {
+	width:30%;
+}
+
+.article h3 {
+	padding-left: 220px;
+}
+
+.article h3 a:hover {
+	text-decoration: underline;
+	color: #f60;
+}
+
+.article h3 a {
+	font-size: 16px;
+	color: #474645;
+}
+
+.article p {
+	padding-left: 220px;
+	color: #756F71;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.article .autor {
+	font-size: 12px;
+}
+
+.article .autor a{
+	color: #759b08;
+	text-decoration: none;
+}
+
+.article .bk {
+	background:url(../images/newsbg01.png) no-repeat left center;
+	float: left;
+	padding-left: 20px;
+	margin-right: 10px;
+}
+
+.article .bk_date {
+	background:url(../images/newsbg02.png) no-repeat left center;
+	float: left;
+	padding-left: 20px;
+}
+
+.article .bk_rate {
+	background:url(../images/newsbg03.png) no-repeat left center;
+	float: right;
+	padding-left: 20px;
+	margin-right: 10px;
+}
+
+.article .bk_view {
+	background:url(../images/newsbg04.png) no-repeat left center;
+	float: right;
+	padding-left: 20px;
+}
+
+.article img{
+	float: left;
+}
+
+.content .content-right {
+	float: right;
+	width: 300px;
+}
+
+.follow-me {
+	
+}
+
+.follow-me h3{
+	border-bottom: 1px solid #ccc;
+	padding-bottom:10px;
+	font-size:18px;
+}
+
+.follow-me-way {
+	
+}
+
+.follow-me ul {
+	overflow: hidden;
+	margin: 30px 0;
+	display:inline-block;	/*注意该属性的作用，保证.follow-me这个div的高度能够被正确显示*/
+}
+
+.follow-me ul li {
+	list-style-type: none;
+	float: left;
+	padding: 0 18px 0 6px;
+	width:51px;
+}
+
+.follow-me ul li a {
+	text-decoration: none;
+	display: block;
+	padding-top:60px;
+	text-align: center;
+	
+}
+
+.follow-me .xlwb:hover {
+	background:url(../images/ico_05.png) no-repeat top;
+	color: #000;
+}
+
+.follow-me .rss:hover {
+	background:url(../images/ico_04.png) no-repeat top;
+	color: #000;
+}
+
+.follow-me .email:hover {
+	background:url(../images/ico_07.png) no-repeat top;
+	color: #000;
+}
+
+.follow-me .txwb:hover {
+	background:url(../images/ico_06.png) no-repeat top;
+	color: #000;
+}
+
+.follow-me .xlwb {
+	background:url(../images/ico_05_1.jpg) no-repeat top;
+}
+
+.follow-me .txwb {
+	background:url(../images/ico_06_1.jpg) no-repeat top;
+}
+
+
+.follow-me .rss {
+	background:url(../images/ico_04_1.jpg) no-repeat top;
+}
+
+.follow-me .email {
+	background:url(../images/ico_07_1.jpg) no-repeat top;
+}
+
+.tg {
+	margin: 20px 0px 15px 0;
+}
+
+.tg .tg_ul {
+	overflow: hidden;
+	font-size: 14px;
+}
+
+.tg .tg_ul .cur {
+	background: #f77825;
+}
+.tg .tg_ul .cur a {
+	color:#fff;
+}
+
+.tg .tg_ul li {
+	float: left;
+	border-bottom: 1px solid #ccc;
+}
+
+.tg .tg_ul li a {
+	padding: 0 15px;
+	line-height: 33px;
+}
+
+.tg-main ul {
+	background: url(../images/ph2.png) no-repeat 10px 21px;
+}
+
+.tg-main ul li {
+	border-bottom: 1px solid #ccc;
+	padding:15px 0 1px 35px;
+	margin: 0 0 0 10px;
+}
+
+.tg-main ul li:hover {
+	border-bottom: 1px solid #000;
+}
+
+.tg-main ul li a {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.tg-main ul li a:hover {
+	color: #000;
+}
+
+.mark-cloud h3 {
+	border-bottom: 1px solid #ccc;
+	padding-bottom:10px;
+	font-size:18px;	
+}
+
+.mark-cloud {
+	margin-top:25px;
+}
+
+.mark-cloud h3 {
+	border-bottom: 1px solid #ccc;
+	padding-bottom:10px;
+	font-size:18px;	
+}
+
+.mark-cloud ul {
+	overflow: hidden;
+	margin: 20px 0;
+}
+
+.mark-cloud ul li {
+	margin:10px 10px 0 0;
+	padding:5px 12px;
+	float: left;
+	border-radius:8px;
+	transition:all 0.5s;
+}
+
+.mark-cloud ul li:hover {
+	border-radius: 0px;
+	text-shadow:#000 1px 1px 1px;
+}
+
+.mark-cloud ul li:nth-child(8n-7) { 
+	background: #8A9B0F 
+}
+.mark-cloud ul li:nth-child(8n-6) {
+ 	background: #EB6841 
+}
+.mark-cloud ul li:nth-child(8n-5) {
+ 	background: #3FB8AF 
+}
+.mark-cloud ul li:nth-child(8n-4) {
+ 	background: #FE4365 
+}
+.mark-cloud ul li:nth-child(8n-3) {
+ 	background: #FC9D9A 
+}
+.mark-cloud ul li:nth-child(8n-2) {
+ 	background: #EDC951 
+}
+.mark-cloud ul li:nth-child(8n-1) {
+ 	background: #C8C8A9 
+}
+.mark-cloud ul li:nth-child(8n) {
+ 	background: #83AF9B 
+}
+.mark-cloud ul li:first-child {
+ 	background: #036564 
+}
+.mark-cloud ul li:last-child {
+ 	background: #3299BB 
+}
+
+.mark-cloud ul li a {
+	color: #FFF;
+}
+
+.img-rm {
+	margin: 10px 0;
+}
+
+.img-rm h3 {
+	border-bottom: 1px solid #ccc;
+	padding-bottom:10px;
+	font-size:18px;	
+}
+
+.img-rm ul {
+	margin: 20px 0;
+}
+
+.img-rm ul li:hover {
+	background: #f4f3f3;
+}
+
+.img-rm ul li {
+	margin-bottom: 15px;
+	clear: both;
+}
+
+.img-rm ul li b:hover {
+	text-decoration: underline;
+	color: #f60;
+}
+
+.img-rm ul li b {
+	font-size: 14px;
+	font-weight: normal;
+	margin-left: 10px;
+	line-height: 40px;
+	color: #333;
+}
+
+.img-rm ul li p {
+	font-size: 12px;
+	margin-left: 85px;
+}
+
+.img-rm ul li p span{
+	padding: 0 16px;
+	color: #999;
+}
+
+.img-rm ul li p span a {
+	color: #999;
+}
+
+.img-rm ul li img {
+	width: 70px;
+	float: left;
+}
+
+.img-rm .peijian {
+	background:url(../images/lanmbq.png) no-repeat left center;
+}
+
+.img-rm .date {
+	background:url(../images/datepng.png) no-repeat left center;
+}
+
+.img-de {
+	margin: 20px 0;
+}
+
+.yqlj {
+	margin: 10px 0;
+}
+
+.yqlj h3 {
+	border-bottom: 1px solid #ccc;
+	padding-bottom:10px;
+	font-size:18px;
+	overflow: hidden;
+}
+
+.yqlj h3 span {
+	font-size: 12px;
+	float: right;
+	padding-top:4px;
+}
+
+.yqlj h3 span a:hover {
+	text-decoration: underline;
+	color: #f60;
+}
+
+.yqlj ul {
+	overflow: hidden;
+	background: #f9f9f9;
+	border: #e9e9e9 1px solid;
+	margin: 20px 0;
+	padding: 10px;
+}
+
+.yqlj ul li {
+	float: left;
+	padding: 5px 8px;
+}
+
+.yqlj ul li a:hover {
+	color: #000;
+}
