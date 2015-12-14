@@ -153,11 +153,11 @@ body {
 .ad .img-title .img-index a{
 	color: #fff;
 	background: url(../images/silde-nav.png) no-repeat 0 0;
-	padding:4px 9px;
+	padding:4px 9px 3px 9px;
 }
 
 .ad .img-title .img-index .cur{
-	background: url(../images/silde-nav.png) no-repeat 0 100%;
+	background-position-y: -24px;
 }
 
 .article {
