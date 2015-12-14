@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 				$indexSpan.append('<a href="###">' + ( i + 1) + '</a>');
 			}
 
-			var $imageTitle = this.$imageTitle = $('<div class="img-title"><span class="title"></span><span class="content"></span></div>');
+			var $imageTitle = this.$imageTitle = $('<div class="img-title"><span class="title"></span><span class="des"></span></div>');
 			$imageTitle.append($indexSpan);
 
 			//加载到对应页面元素
@@ -58,6 +58,16 @@ jQuery(document).ready(function($) {
 			indexElem.addClass('cur');
 			//让对应图片显示出来
 			this.$imageListDiv.animate({'left':index * - this.unit}, 'slow');
+			this.$imageTitle.find('.title').html(this.imageData[index].title);
+			this.$imageTitle.find('.des').html(this.imageData[index].des);
+		},
+
+		next: function () {
+			if(this.index === this.imageData.length - 1) {
+				this.showImge(0);
+			}else {
+				this.showImge(this.index + 1);
+			}
 		}
 	};
 
@@ -95,6 +105,12 @@ jQuery(document).ready(function($) {
 	];
 
 	var ad = new Ad($(".ad"), imageData);
+
+	window.ad_next = function () {
+		ad.next();
+	};
+
+	window.setInterval("ad_next()",3000);
 
 	//右侧点击排行 最新文章 站长推荐 切换效果
 	$("#tg").on('mouseover', 'li', function(event) {

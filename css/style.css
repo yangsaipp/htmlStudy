@@ -134,15 +134,15 @@ body {
 
 .ad .img-title span {
 	padding: 0px 20px;
-	line-height: 36px;
 	overflow: hidden;
+	line-height: 36px;
 }
 
 .ad .img-title .title{
 	
 }
 
-.ad .img-title .content{
+.ad .img-title .des{
 	
 }
 
@@ -153,7 +153,8 @@ body {
 .ad .img-title .img-index a{
 	color: #fff;
 	background: url(../images/silde-nav.png) no-repeat 0 0;
-	padding:4px 9px 3px 9px;
+	padding:5px 15px 3px 8px;
+	line-height: 36px;
 }
 
 .ad .img-title .img-index .cur{
